@@ -17,7 +17,7 @@ public:
         file.open(filepath, ios::app);
         if (file.is_open()) {
             for (const auto &definition : definitions) {
-                file << word << ":" << definition << endl;
+                file << word << ":\t" << definition << endl;
             }
             file.close();
         } else {
