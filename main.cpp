@@ -16,6 +16,7 @@ public:
         ofstream file;
         file.open(filepath, ios::app);
         if (file.is_open()) {
+            file << "====================================" << endl; // Add separator line
             for (const auto &definition : definitions) {
                 file << word << ":\t" << definition << endl;
             }

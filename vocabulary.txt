@@ -7,3 +7,10 @@ hello:	greeting
 hello:	ask for sex
 hello:	fuck you
 hello:	bich
+====================================
+hektor:	mathematic usage
+hektor:	shamba kubwa done
+====================================
+mikate:	kunywa na chai
+mikate:	mtafute josiah
+mikate:	au brandon
