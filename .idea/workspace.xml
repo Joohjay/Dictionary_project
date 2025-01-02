@@ -12,8 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c059584-9e36-42f2-a24b-7444cd7762db" name="Changes" comment="adding line separator after each word when exiting the program">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7c059584-9e36-42f2-a24b-7444cd7762db" name="Changes" comment="removing redundant code">
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +93,7 @@
       <workItem from="1735846341543" duration="85000" />
       <workItem from="1735846477962" duration="1357000" />
       <workItem from="1735847863035" duration="2000" />
-      <workItem from="1735848024059" duration="3078000" />
+      <workItem from="1735848024059" duration="3392000" />
     </task>
     <task id="LOCAL-00001" summary="initializing the dictionary project">
       <option name="closed" value="true" />
@@ -160,7 +159,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735850348284</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding line separator after each word when exiting the program">
+      <option name="closed" value="true" />
+      <created>1735851159760</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735851159760</updated>
+    </task>
+    <task id="LOCAL-00010" summary="removing redundant code">
+      <option name="closed" value="true" />
+      <created>1735851431812</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735851431812</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +200,7 @@
     <MESSAGE value="allow user to add definition to existing word if already found" />
     <MESSAGE value="arrange data in a table way in txt file" />
     <MESSAGE value="adding line separator after each word when exiting the program" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding line separator after each word when exiting the program" />
+    <MESSAGE value="removing redundant code" />
+    <option name="LAST_COMMIT_MESSAGE" value="removing redundant code" />
   </component>
 </project>
