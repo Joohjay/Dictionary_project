@@ -71,8 +71,19 @@ int main() {
                 cout << "Enter word: ";
                 cin >> word;
                 cin.ignore(); // To ignore the leftover newline character
+                {
+                    vector<string> existingDefinitions = dict.searchWordInFile(word);
+                    if (!existingDefinitions.empty() && existingDefinitions[0] != "Word not found!") {
+                        cout << "Word already exists with the following definitions:" << endl;
+                        for (const auto &def : existingDefinitions) {
+                            cout << "- " << def << endl;
+                        }
+                        cout << "Enter additional definitions (or type 'done' to finish): ";
+                    } else {
+                        cout << "Enter definitions (or type 'done' to finish): ";
+                    }
+                }
                 do {
-                    cout << "Enter definition (or type 'done' to finish): ";
                     getline(cin, definition);
                     if (definition != "done") {
                         definitions.push_back(definition);
@@ -86,10 +97,12 @@ int main() {
                 cout << "Enter word to search: ";
                 cin >> word;
                 cin.ignore(); // To ignore the leftover newline character
-                vector<string> results = dict.searchWordInFile(word);
-                cout << "Definitions of " << word << ":" << endl;
-                for (const auto &def : results) {
-                    cout << "- " << def << endl;
+                {
+                    vector<string> results = dict.searchWordInFile(word);
+                    cout << "Definitions of " << word << ":" << endl;
+                    for (const auto &def : results) {
+                        cout << "- " << def << endl;
+                    }
                 }
                 break;
             case 3:

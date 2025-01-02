@@ -12,7 +12,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c059584-9e36-42f2-a24b-7444cd7762db" name="Changes" comment="adding mechanism to add multiple definitions" />
+    <list default="true" id="7c059584-9e36-42f2-a24b-7444cd7762db" name="Changes" comment="return multiple search">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/main.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocabulary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vocabulary.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +96,7 @@
       <workItem from="1735846341543" duration="85000" />
       <workItem from="1735846477962" duration="1357000" />
       <workItem from="1735847863035" duration="2000" />
-      <workItem from="1735848024059" duration="1720000" />
+      <workItem from="1735848024059" duration="1955000" />
     </task>
     <task id="LOCAL-00001" summary="initializing the dictionary project">
       <option name="closed" value="true" />
@@ -125,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735849570992</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="return multiple search">
+      <option name="closed" value="true" />
+      <created>1735849841054</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735849841054</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +159,7 @@
     <MESSAGE value="initializing the dictionary project" />
     <MESSAGE value="final project" />
     <MESSAGE value="adding mechanism to add multiple definitions" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding mechanism to add multiple definitions" />
+    <MESSAGE value="return multiple search" />
+    <option name="LAST_COMMIT_MESSAGE" value="return multiple search" />
   </component>
 </project>
