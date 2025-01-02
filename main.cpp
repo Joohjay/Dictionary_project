@@ -20,7 +20,7 @@ public:
             if (!file.is_open()) {
                 throw runtime_error("Unable to open file for writing.");
             }
-            file << "====================================" << endl; // Add separator line
+            file << "====================================" << endl;
             for (const auto &definition : definitions) {
                 file << word << ":\t" << definition << endl;
             }
@@ -84,7 +84,7 @@ int main() {
             case 1:
                 cout << "Enter word: ";
                 cin >> word;
-                cin.ignore(); // To ignore the leftover newline character
+                cin.ignore();
                 {
                     vector<string> existingDefinitions = dict.searchWordInFile(word);
                     if (!existingDefinitions.empty() && existingDefinitions[0] != "Word not found!") {
@@ -105,12 +105,12 @@ int main() {
                 } while (definition != "done");
                 dict.addWordToFile(word, definitions);
                 cout << "Word added successfully!" << endl;
-                definitions.clear(); // Clear definitions for next word
+                definitions.clear();
                 break;
             case 2:
                 cout << "Enter word to search: ";
                 cin >> word;
-                cin.ignore(); // To ignore the leftover newline character
+                cin.ignore();
                 {
                     vector<string> results = dict.searchWordInFile(word);
                     cout << "Definitions of " << word << ":" << endl;
