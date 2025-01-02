@@ -25,9 +25,10 @@ public:
         }
     }
 
-    string searchWordInFile(const string &word) {
+    vector<string> searchWordInFile(const string &word) {
         ifstream file(filepath);
-        string line, foundDefinition = "Word not found!";
+        string line;
+        vector<string> foundDefinitions;
         if (file.is_open()) {
             while (getline(file, line)) {
                 size_t pos = line.find(':');
@@ -35,8 +36,7 @@ public:
                     string fileWord = line.substr(0, pos);
                     string fileDefinition = line.substr(pos + 1);
                     if (fileWord == word) {
-                        foundDefinition = fileDefinition;
-                        break;
+                        foundDefinitions.push_back(fileDefinition);
                     }
                 }
             }
@@ -44,7 +44,7 @@ public:
         } else {
             cerr << "Unable to open file for reading." << endl;
         }
-        return foundDefinition;
+        return foundDefinitions.empty() ? vector<string>{"Word not found!"} : foundDefinitions;
     }
 };
 
@@ -85,7 +85,12 @@ int main() {
             case 2:
                 cout << "Enter word to search: ";
                 cin >> word;
-                cout << "Definition of " << word << ": " << dict.searchWordInFile(word) << endl;
+                cin.ignore(); // To ignore the leftover newline character
+                vector<string> results = dict.searchWordInFile(word);
+                cout << "Definitions of " << word << ":" << endl;
+                for (const auto &def : results) {
+                    cout << "- " << def << endl;
+                }
                 break;
             case 3:
                 cout << "Exiting..." << endl;
