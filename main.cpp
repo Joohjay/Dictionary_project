@@ -48,7 +48,7 @@ public:
                 if (pos != string::npos) {
                     string fileWord = line.substr(0, pos); // Extract the word
                     string fileDefinition = line.substr(pos + 1); // Extract the definition
-                    if (fileWord == word) {
+                    if (fileWord.find(word) != string::npos) { // Check for partial match
                         foundDefinitions.push_back(fileDefinition); // Add definition to the list
                     }
                 }
