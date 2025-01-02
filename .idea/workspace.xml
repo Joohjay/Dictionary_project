@@ -12,7 +12,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c059584-9e36-42f2-a24b-7444cd7762db" name="Changes" comment="initializing the dictionary project" />
+    <list default="true" id="7c059584-9e36-42f2-a24b-7444cd7762db" name="Changes" comment="initializing the dictionary project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,12 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Joohjay/Dictionary_project.git",
-    "accountId": "6e9576c4-3077-4886-b058-e85f38bd8e4e"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AraphatUrasa&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Joohjay/Dictionary_project.git&quot;,
+    &quot;accountId&quot;: &quot;6e9576c4-3077-4886-b058-e85f38bd8e4e&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
@@ -45,16 +53,18 @@
     "C/C++ File.Program.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/james/Desktop/Jonson",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "structure.view.defaults.are.configured": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -68,7 +78,9 @@
       <updated>1735846299192</updated>
       <workItem from="1735846301753" duration="38000" />
       <workItem from="1735846341543" duration="85000" />
-      <workItem from="1735846477962" duration="989000" />
+      <workItem from="1735846477962" duration="1357000" />
+      <workItem from="1735847863035" duration="2000" />
+      <workItem from="1735848024059" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="initializing the dictionary project">
       <option name="closed" value="true" />
