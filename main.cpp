@@ -46,19 +46,45 @@ public:
     }
 };
 
+void displayMenu() {
+    cout << "Dictionary Menu" << endl;
+    cout << "1. Add a word" << endl;
+    cout << "2. Search for a word" << endl;
+    cout << "3. Exit" << endl;
+    cout << "Enter your choice: ";
+}
+
 int main() {
     Dictionary dict("vocabulary.txt");
+    int choice;
+    string word, definition;
 
-    // Add words to the file
-    dict.addWordToFile("example", "a representative form or pattern");
-    dict.addWordToFile("test", "a procedure intended to establish the quality, performance, or reliability of something");
+    do {
+        displayMenu();
+        cin >> choice;
 
-    // Search for words
-    string wordToSearch = "example";
-    cout << "Definition of " << wordToSearch << ": " << dict.searchWordInFile(wordToSearch) << endl;
-
-    wordToSearch = "test";
-    cout << "Definition of " << wordToSearch << ": " << dict.searchWordInFile(wordToSearch) << endl;
+        switch (choice) {
+            case 1:
+                cout << "Enter word: ";
+                cin >> word;
+                cout << "Enter definition: ";
+                cin.ignore(); // To ignore the leftover newline character
+                getline(cin, definition);
+                dict.addWordToFile(word, definition);
+                cout << "Word added successfully!" << endl;
+                break;
+            case 2:
+                cout << "Enter word to search: ";
+                cin >> word;
+                cout << "Definition of " << word << ": " << dict.searchWordInFile(word) << endl;
+                break;
+            case 3:
+                cout << "Exiting..." << endl;
+                break;
+            default:
+                cout << "Invalid choice. Please try again." << endl;
+        }
+    } while (choice != 3);
 
     return 0;
 }
