@@ -12,11 +12,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c059584-9e36-42f2-a24b-7444cd7762db" name="Changes" comment="return multiple search">
+    <list default="true" id="7c059584-9e36-42f2-a24b-7444cd7762db" name="Changes" comment="adding line separator after each word when exiting the program">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/main.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vocabulary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vocabulary.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +94,7 @@
       <workItem from="1735846341543" duration="85000" />
       <workItem from="1735846477962" duration="1357000" />
       <workItem from="1735847863035" duration="2000" />
-      <workItem from="1735848024059" duration="1955000" />
+      <workItem from="1735848024059" duration="3078000" />
     </task>
     <task id="LOCAL-00001" summary="initializing the dictionary project">
       <option name="closed" value="true" />
@@ -138,7 +136,31 @@
       <option name="project" value="LOCAL" />
       <updated>1735849841054</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="allow user to add definition to existing word if already found">
+      <option name="closed" value="true" />
+      <created>1735850078582</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735850078582</updated>
+    </task>
+    <task id="LOCAL-00007" summary="arrange data in a table way in txt file">
+      <option name="closed" value="true" />
+      <created>1735850204757</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735850204757</updated>
+    </task>
+    <task id="LOCAL-00008" summary="adding line separator after each word when exiting the program">
+      <option name="closed" value="true" />
+      <created>1735850348284</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735850348284</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +182,9 @@
     <MESSAGE value="final project" />
     <MESSAGE value="adding mechanism to add multiple definitions" />
     <MESSAGE value="return multiple search" />
-    <option name="LAST_COMMIT_MESSAGE" value="return multiple search" />
+    <MESSAGE value="allow user to add definition to existing word if already found" />
+    <MESSAGE value="arrange data in a table way in txt file" />
+    <MESSAGE value="adding line separator after each word when exiting the program" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding line separator after each word when exiting the program" />
   </component>
 </project>

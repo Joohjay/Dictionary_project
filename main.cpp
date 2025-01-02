@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <stdexcept>
 
 using namespace std;
 
@@ -14,23 +15,30 @@ public:
 
     void addWordToFile(const string &word, const vector<string> &definitions) {
         ofstream file;
-        file.open(filepath, ios::app);
-        if (file.is_open()) {
+        try {
+            file.open(filepath, ios::app);
+            if (!file.is_open()) {
+                throw runtime_error("Unable to open file for writing.");
+            }
             file << "====================================" << endl; // Add separator line
             for (const auto &definition : definitions) {
                 file << word << ":\t" << definition << endl;
             }
             file.close();
-        } else {
-            cerr << "Unable to open file for writing." << endl;
+        } catch (const exception &e) {
+            cerr << e.what() << endl;
         }
     }
 
     vector<string> searchWordInFile(const string &word) {
-        ifstream file(filepath);
+        ifstream file;
         string line;
         vector<string> foundDefinitions;
-        if (file.is_open()) {
+        try {
+            file.open(filepath);
+            if (!file.is_open()) {
+                throw runtime_error("Unable to open file for reading.");
+            }
             while (getline(file, line)) {
                 size_t pos = line.find(':');
                 if (pos != string::npos) {
@@ -42,8 +50,8 @@ public:
                 }
             }
             file.close();
-        } else {
-            cerr << "Unable to open file for reading." << endl;
+        } catch (const exception &e) {
+            cerr << e.what() << endl;
         }
         return foundDefinitions.empty() ? vector<string>{"Word not found!"} : foundDefinitions;
     }
@@ -65,7 +73,12 @@ int main() {
 
     do {
         displayMenu();
-        cin >> choice;
+        if (!(cin >> choice)) {
+            cerr << "Invalid input. Please enter a number." << endl;
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            continue;
+        }
 
         switch (choice) {
             case 1:
@@ -110,7 +123,7 @@ int main() {
                 cout << "Exiting..." << endl;
                 break;
             default:
-                cout << "Invalid choice. Please try again." << endl;
+                cerr << "Invalid choice. Please try again." << endl;
         }
     } while (choice != 3);
 
