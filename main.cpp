@@ -12,11 +12,13 @@ private:
 public:
     Dictionary(const string &path) : filepath(path) {}
 
-    void addWordToFile(const string &word, const string &definition) {
+    void addWordToFile(const string &word, const vector<string> &definitions) {
         ofstream file;
         file.open(filepath, ios::app);
         if (file.is_open()) {
-            file << word << ":" << definition << endl;
+            for (const auto &definition : definitions) {
+                file << word << ":" << definition << endl;
+            }
             file.close();
         } else {
             cerr << "Unable to open file for writing." << endl;
@@ -58,6 +60,7 @@ int main() {
     Dictionary dict("vocabulary.txt");
     int choice;
     string word, definition;
+    vector<string> definitions;
 
     do {
         displayMenu();
@@ -67,11 +70,17 @@ int main() {
             case 1:
                 cout << "Enter word: ";
                 cin >> word;
-                cout << "Enter definition: ";
                 cin.ignore(); // To ignore the leftover newline character
-                getline(cin, definition);
-                dict.addWordToFile(word, definition);
+                do {
+                    cout << "Enter definition (or type 'done' to finish): ";
+                    getline(cin, definition);
+                    if (definition != "done") {
+                        definitions.push_back(definition);
+                    }
+                } while (definition != "done");
+                dict.addWordToFile(word, definitions);
                 cout << "Word added successfully!" << endl;
+                definitions.clear(); // Clear definitions for next word
                 break;
             case 2:
                 cout << "Enter word to search: ";
